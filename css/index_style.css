@@ -1,0 +1,496 @@
+body{
+    font-family: Montserrat, sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#section1
+{
+    background-image: url(../images/header-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.headerContent
+{
+    background-color: rgba(0,0,0,0.7);
+}
+
+#section1 .content .smallHeading
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+
+}
+#section1 .content .tallHeading
+{
+    font-size: 1rem;
+    line-height: 1.7rem;
+    color:rgba(255,255,255,0.75);
+}
+#section1 .content h1
+{
+    font-size: 3.375rem;
+    line-height: 4.0625rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width : 991px)
+{
+    #section1 .content h1{
+        font-size: 2.375rem !important;
+    }
+}
+#section1 .butt .headerBtn
+{
+    border-radius: 1.8rem;
+    background-color: transparent;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    transition: 0.4s;
+}
+#section1 .butt .headerBtn:hover
+{
+    color: #000 !important;
+    background-color: white;
+}
+#section1 .scroller
+{
+    transform: rotate(-90deg);
+}
+#section1 .scroller a
+{
+    display: flex;
+    width:3rem;
+    height: 2rem;
+    border: 1px solid white;
+    border-radius: 1.8rem;
+    justify-content:start;
+    align-items: center;
+}
+#section1 .scroller a span
+{
+    display: block;
+    width:1rem;
+    height: 0.2rem;
+    background-color: white;
+
+}
+#section1 .scroller a
+{
+    transform: translateX(0%);
+    animation: scrolling 1.3s 0.5s normal infinite;
+}
+
+@keyframes scrolling
+{
+    0%{transform: translateX(0%);}
+    50%{transform: translateX(60%);}
+    85%{transform: translateX(30%);}
+    100%{transform: translateX(0%);}
+
+}
+
+#section1 .setting
+{
+    width:2.5rem;
+    height: 2.5rem;
+    transform: rotate(0deg);
+    background-color: rgb(43,36,36);
+    position: fixed;
+    top:15rem;
+    cursor: pointer;
+    z-index: 999999999999999;
+}
+#section1 .setting i
+{
+    font-size: 1.5rem;
+    
+    animation:rotation 1.5s 0s normal infinite ;
+}
+
+@keyframes rotation{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.navigation nav
+{
+    z-index: 999999999999999999;
+}
+.navigation .navbar-brand
+{
+    width:3rem;
+    height: 3rem;
+    
+}
+.navigation ul li a
+{
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.navigation ul li a
+{
+    transition: 0.5s;
+}
+.navigation ul li:hover a
+{
+    color:#8d1c2f !important;
+}
+
+
+@media screen and (max-width: 991px) 
+{
+    .navigation nav 
+    {
+        background-color: white !important;
+    } 
+    
+    
+    html{
+        font-size: 12px;
+    }
+    .navigation ul li a
+    {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color:black !important;
+    }
+    .navigation ul li
+    {
+        margin-bottom: 0.5rem;
+    }
+}
+#section2 .imgContainer img
+{
+    width: 100%;
+}
+
+h2
+{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    
+}
+#section2 .contentContainer h2 ,#section2 .contentContainer h3
+{
+    color:#212529;
+}
+#section2 .contentContainer h3 span{
+    color:#e65f78;
+}
+#section2 .contentContainer p
+{
+    line-height: 1.5rem;
+    color:#6c757d;
+}
+#section2 .contentContainer .icons i
+{
+    border-color: #6c757d !important;
+    width: 2rem;
+    height: 2rem;
+    transition: 0.5s;
+}
+#section2 .contentContainer .icons i:hover
+{
+    border-color: #e65f78 !important;
+    color:#e65f78 !important
+}
+#section3 p
+{
+    line-height: 1.5rem;
+    color:#6c757d !important;
+}
+
+#section3 .section3Part2 .servicContainer .service h3
+{
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color:#212529;
+}
+#section3 .section3Part2 .servicContainer .service
+{
+    border:1px solid #e8e8e8;
+    transition: 1s;
+}
+#section3 .section3Part2 .servicContainer .service h3::after
+{
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 0.2rem;
+    background-color: #e65f78;
+    margin: 1rem auto;
+    opacity: 1;
+    transition: 0.3s;
+}
+#section3 .section3Part2 .servicContainer .service:hover h3::after
+{
+    width:4rem;
+    
+}
+
+
+#section3
+{
+    background-color: #F8F9FA;
+}
+
+#section3 .section3Part3 h3
+{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+}
+#section3 .section3Part3 .butt
+{
+    color:#f3f3f3;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.3125rem;
+}
+
+.section4Part2 .carousel ol li
+{
+    transition: 0.5s;
+}
+.section4Part2 .carousel ol li:hover
+{
+    background-color: red !important;    
+}
+
+.section4,.section6
+{
+    background-color: #F8F9FA;
+}
+.section6Part2 .blog .first
+{
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    color: #1e2022;
+    transition: 0.5s;
+}
+.section6Part2 .blog .first:hover
+{
+    color:#121416;
+}
+.section6Part2 .blog a,.section6Part2 .blog p
+{
+    
+    line-height: 1.2rem;
+    color:#6c757d;
+    text-decoration: none;
+}
+
+.section6Part2 .blog p
+{
+    font-weight: 400;
+}
+
+footer .icons a i
+{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+footer
+{
+    background-color: #242424;
+}
+#section5 .section5Part2 ul li a
+{
+    color:black !important;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+#section5 .section5Part2 ul li
+{
+    margin-right: 5px;
+}
+#section5 .section5Part2 ul li .active 
+{
+    background-color: #e65f78 !important;
+    border-radius: 3rem;
+    color:white !important;
+}
+#section5 .section5Part2 ul li:hover
+{
+    background-color: #e65f78 !important;
+    border-radius: 3rem;
+}
+#section5 .section5Part2 ul li a
+{
+    transition: 0.5s;
+}
+#section5 .section5Part2 ul li:hover a
+{
+    
+    color: white !important;
+}
+
+#section5 .section5Part2 .tab-content .images .forHover
+{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.8) !important;
+    transition: 0.7s;
+    
+}
+#section5 .section5Part2 .tab-content .images .forHover .text-white
+{
+    font-size: 1.3rem;
+    line-height: 1.45rem;
+    font-weight: 500;
+}
+#section5 .section5Part2 .tab-content .images .inner:hover .forHover
+{
+    opacity: 1;
+}
+#section5 .section5Part2 .tab-content .images .inner
+{
+    border-radius: 0.5rem;
+}
+#section5 .section5Part2 .tab-content .images .inner .forHover .content
+{
+    top: 100%;
+    left: 0;
+    transition: top 0.5s 0.1s ;
+}
+#section5 .section5Part2 .tab-content .images .inner:hover .forHover .content
+{
+    top:0
+}
+#section5 .section5Part2 .tab-content .images .inner img
+{
+    
+    transition: 0.7s;
+}
+#section5 .section5Part2 .tab-content .images .inner:hover img
+{
+    transform: scale(1.2);
+}
+
+#section7 .section7Part2 h3
+{
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.3rem;
+}
+
+#section7 .section7Part2 p
+{
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+#section7 .section7Part3 input:focus,#section7 .section7Part3 textarea:focus
+{
+    border-color: red !important;
+    box-shadow: none;
+}
+#section7 .section7Part3 button
+{
+    width:23%;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+@media screen and (max-width: 576px) {
+    #section7 .section7Part3 button
+    {
+        font-weight: bolder;
+    }
+}
+.scrollingUp
+{
+    
+    display: none;
+}
+.scrollingUp i
+{
+    width:2.5rem;
+    height:2rem;
+    bottom:2rem;
+    right: 2rem;
+    cursor: pointer;
+}
+
+.forLoading
+{
+    height:100vh;
+    width:100%;
+    position: fixed;
+    left: 0;
+    top:0;
+    z-index: 88888888888; 
+    background-color: #137b85;
+    color: #fff;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forLoading h1 {
+    font: 2em 'Roboto', sans-serif;
+    margin-bottom: 40px;
+  }
+  
+  #loading {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+.forTest
+{
+    color:#137b85 !important
+}
+
+.navbarScroll
+{
+    background-color: #137b85 !important;    
+}
+
+.forcolors
+{
+    position: fixed;
+    left: 0;
+    top : 18rem;
+    width: 208px;
+    z-index: 999999999999999;
+    background-color: #617577;
+    display: flex;
+    justify-content: center;
+}
+
+.forcolors .color
+{
+    display:block;
+    width : 1.5rem;
+    height: 1.5rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+
+
+/*plugin*/
+
